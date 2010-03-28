@@ -1,0 +1,82 @@
+/***
+# Copyright (c) 2007 Nathaniel Brown
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+***/
+
+.toolbawks_tags_menu_button {
+  display: inline;
+  text-decoration: none;
+}
+
+.toolbawks_tags_menu_button .button {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 16px;
+  background: url(/plugin_assets/toolbawks_tags/images/buttons/categories.gif) no-repeat top left;
+}
+
+.toolbawks_tags_menu_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  overflow: hidden;
+  height: 200px;
+  z-index: 1000000;
+}
+
+.toolbawks_tags_menu_container .tag_list {
+  position: relative;
+  height: 200px;
+  width: 150px;
+  overflow: auto;
+}
+
+.toolbawks_tags_menu_container .tag_list li {
+  overflow: hidden;
+}
+
+.toolbawks_tags_menu_container .tag_list li a,
+.toolbawks_tags_menu_container .tag_list li a:visited {
+  color: #FFF;
+  font-size: 0.8em;
+  text-decoration: none;
+  display: block;
+  width: 148px;
+}
+
+.toolbawks_tags_menu_container .tag_list li.right a,
+.toolbawks_tags_menu_container .tag_list li.right a:visited,
+.toolbawks_tags_menu_container .tag_list li.left a,
+.toolbawks_tags_menu_container .tag_list li.left a:visited {
+}
+
+.toolbawks_tags_menu_container .tag_list li.right {
+  background: red;
+}
+
+.toolbawks_tags_menu_container .tag_list li.left {
+  background: blue;
+}
+
+.toolbawks_tags_menu_container .tag_list li.go {
+  background: green;
+}

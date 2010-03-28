@@ -1,0 +1,13 @@
+<%= toolbawks_tags_menu(:active_tag_id => params[:id]) %>
+
+<% if (@tag.class == Array) -%>
+<h1>Showing results for:</h1>
+<ul>
+<% @tag.each do |tag| -%>
+  <li><%= tag.name %></li>
+<% end -%>
+</ul>
+<% else -%>
+<h1>Showing results for:</h1>
+<b><%= @tag.name %></b>
+<% end -%>

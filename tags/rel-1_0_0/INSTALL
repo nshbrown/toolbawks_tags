@@ -1,0 +1,19 @@
+= Toolbawks Tags - Installation Directions
+
+1. Create your Rails application, set up your databases.
+
+2. Install the Toolbawks Tags (it will install Engines if it doesn't already exist)
+	
+	script/plugin install http://svn.toolbocks.com/plugins/toolbawks_tags/
+
+3. Add the following within the "Rails::Initializer.run do |config|" block in config/environment.rb
+
+    config.plugins = ["engines", "*"]
+
+4. For good measure, you should update your JavaScripts to the latest version of Prototype and Scriptaculous.
+
+  rake rails:update:javascripts
+
+5. Add this line to any page that is to show the Tag Manager
+
+	<%= javascript_include_tag 'core', :plugin => 'toolbawks_tags' %>
